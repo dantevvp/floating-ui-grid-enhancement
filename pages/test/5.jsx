@@ -79,7 +79,6 @@ const itemSizes = [
 ]
 
 export default function Test() {
-  //const a = useListNavigation()
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return <div>
