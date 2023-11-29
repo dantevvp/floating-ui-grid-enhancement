@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@floating-ui/react": "file:../floating-ui/packages/react",
     "lodash": "^4.17.21",
     "next": "latest",
     "react": "17.0.2",

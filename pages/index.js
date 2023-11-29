@@ -1,6 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Button from '../components/Button'
 import { H1 } from '../components/Typography'
