@@ -25,19 +25,19 @@ export default function Test() {
       <hr/>
     </div>
     <div className="my-4">
-      <Composite className="grid grid-cols-3" cols={3} itemSizes={itemSizes}>
-        <NavGridItem className="border border-black">1</NavGridItem>
-        <NavGridItem className="border border-black" colspan={2}>2</NavGridItem>
-        <NavGridItem className="border border-black">3</NavGridItem>
-        <NavGridItem className="border border-black">4</NavGridItem>
-        <NavGridItem className="border border-black">5</NavGridItem>
-        <NavGridItem className="border border-black">6</NavGridItem>
-        <NavGridItem className="border border-black">7</NavGridItem>
-        <NavGridItem className="border border-black">8</NavGridItem>
-        <NavGridItem className="border border-black">9</NavGridItem>
+      <Composite className="grid grid-cols-3 gap-4" cols={3} itemSizes={itemSizes}>
+        <NavGridItem className="border border-black p-2 rounded-lg">1</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg" colspan={2}>2</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">3</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">4</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">5</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">6</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">7</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">8</NavGridItem>
+        <NavGridItem className="border border-black p-2 rounded-lg">9</NavGridItem>
       </Composite>
     </div>
-    <div className="my-4 flex justify-between">
+    <div className="flex justify-between my-4">
       <div><Link href="1"><Button>Anterior</Button></Link></div>
       <div><Link href="3"><Button>Próximo</Button></Link></div>
     </div>
