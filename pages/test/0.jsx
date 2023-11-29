@@ -13,7 +13,7 @@ export default function Test() {
       <hr/>
     </div>
     <div className="my-4">
-      <Composite className="grid grid-cols-3" cols={3}>
+      <Composite className="grid grid-cols-3 gap-4" cols={3}>
         <CompositeItem render={(props) => <button {...props}>1</button>} />
         <CompositeItem render={(props) => <button {...props}>2</button>} />
         <CompositeItem render={(props) => <button {...props}>3</button>} />
@@ -25,7 +25,7 @@ export default function Test() {
         <CompositeItem render={(props) => <button {...props}>9</button>} />
       </Composite>
     </div>
-    <div className="my-4 flex justify-between">
+    <div className="flex justify-between my-4">
       <div></div>
       <div><Link href="2"><Button>Próximo</Button></Link></div>
     </div>
