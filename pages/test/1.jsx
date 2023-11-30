@@ -4,8 +4,11 @@ import classNames from "../../utils/classNames"
 import NavGridItem from "../../components/NavGridItem"
 import Link from "next/link"
 import Button from "../../components/Button"
+import React from "react";
 
 export default function Test() {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
   return <div>
     <div className="my-2">
       <H1 className="mb-2">Nivel 1</H1>
@@ -13,7 +16,7 @@ export default function Test() {
       <hr/>
     </div>
     <div className="my-4">
-      <Composite className="grid grid-cols-3 gap-4" cols={3}>
+      <Composite className="grid grid-cols-3 gap-4" cols={3} activeIndex={activeIndex} onNavigate={setActiveIndex}>
         <NavGridItem className="border border-black p-2 rounded-lg">1</NavGridItem>
         <NavGridItem className="border border-black p-2 rounded-lg">2</NavGridItem>
         <NavGridItem className="border border-black p-2 rounded-lg">3</NavGridItem>
